@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+.pyenv/
+
+# VSCode settings
+.vscode/
+
+# Pytest
+.cache/
+
+# Static outputs and uploads
+static/output/
+static/uploads/
+
+# Flask-related
+instance/
+*.db
+
+# Logs
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# System-specific
+.DS_Store
+Thumbs.db
+
+# Python virtualenv metadata
+pip-log.txt
+
+# Ignore local settings
+settings.json
