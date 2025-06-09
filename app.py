@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, send_from_directory
 import os
 from utils.overlay import overlay_clothes
+from utils.overlay_pose import overlay_clothes_with_pose
 
 app = Flask(__name__)
 UPLOAD_FOLDER = 'static/uploads'
@@ -26,7 +27,8 @@ def upload():
     user_img.save(user_path)
     clothes_img.save(clothes_path)
 
-    overlay_clothes(user_path, clothes_path, output_path)
+    # overlay_clothes(user_path, clothes_path, output_path)
+    overlay_clothes_with_pose(user_path, clothes_path, output_path)
 
     return send_from_directory(OUTPUT_FOLDER, os.path.basename(output_path))
 
