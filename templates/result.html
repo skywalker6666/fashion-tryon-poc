@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>試穿結果</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 40px;
+        }
+
+        img {
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Try-On Result</h1>
+    <img src="{{ url_for('static', filename='output/' + result_image) }}" alt="Result Image">
+    <br><a href="/">Try Another</a>
+</body>
+
+</html>
